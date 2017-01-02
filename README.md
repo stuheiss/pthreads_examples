@@ -41,6 +41,13 @@ Read Joe's authoritative answers on SO: <http://stackoverflow.com/users/1658631/
 
 Joe's answers often refute and correct common misunderstandings.
 
+Concurrent or Parallel: What's the difference? From Rob Pike:
+> Concurrency is about dealing with lots of things at once. Parallelism is about doing lots of things at once.
+
+pthreads provide concurrency, not parallelism, but you may be able to build parallelism out of concurrent pthreads.
+
+See [gearman](http://php.net/manual/en/book.gearman.php), [eio](http://php.net/manual/en/book.eio.php), [pcntl](http://php.net/manual/en/book.pcntl.php) for other approaches to parallelism.
+
 --
 
 ref: <http://stackoverflow.com/questions/35091882/php-pthreads-locking-variable>
